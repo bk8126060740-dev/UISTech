@@ -1,0 +1,16 @@
+.anouncement_page {
+    padding: 0px 0px;
+}
+.anouncement_page .anouncement-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.anouncement_page .anouncement-head h3 {
+    color: var(--text-primary)!important;
+    font-family: var(--poppins)!important;
+    font-weight: var(--fw-semibold)!important;
+    font-size:var(--fs-h5)!important;
+}

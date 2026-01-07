@@ -1,0 +1,73 @@
+#applyforjob-modal .MuiPaper-root {
+    overflow: visible;
+    border-radius: 15px;
+}
+
+#modal-modal-title {
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#modal-modal-description {
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.job-close-btn-section {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: -22px;
+    right: -18px;
+}
+
+.job-close-btn {
+    height: 40px;
+    width: 40px;
+    box-shadow: var(--shadow-light);
+    background-color: var(--bg-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.job-close-btn svg {
+    width: 16px;
+    height: 16px;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.job-form-section {
+    overflow-y: auto;
+    scrollbar-color: var(--text-primary) transparent !important;
+}
+
+@media screen and (max-width:768px) {
+    #applyforjob-modal .MuiPaper-root {
+        margin: 15px;
+    }
+
+    .job-form-section {
+        max-height: 50%;
+        overflow: auto;
+    }
+
+    .job-close-btn-section {
+        right: -10px;
+        top: -17px;
+    }
+
+    .job-close-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .job-close-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+}

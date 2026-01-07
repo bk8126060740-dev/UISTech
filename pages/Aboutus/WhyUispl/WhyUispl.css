@@ -1,0 +1,129 @@
+.why-uispl {
+    padding: 50px 0;
+}
+
+.why-uispl h2 {
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --------- card Box-------- */
+.cardBox {
+    height: 150px !important;
+    background: var(--text-white) !important;
+    border-radius: 12px !important;
+    box-shadow: var(--shadow-blue) !important;
+    padding: 35px !important;
+    transition: all 0.5s ease !important;
+}
+
+.cardBox a {
+    text-decoration: none !important;
+}
+
+.cardBox .textTitle {
+    margin-bottom: 25px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.cardBox .textTitle .title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+.cardBox .textTitle .title svg {
+    width: 22px !important;
+    height: 22px !important;
+    color: var(--text-dark) !important;
+    transition: all 0.5s ease !important;
+}
+
+.cardBox .textTitle .leftCrossArrow {
+    color: var(--text-primary) !important;
+    width: 22px !important;
+    height: 22px !important;
+    display: none !important;
+    transition: all 0.5s ease !important;
+}
+
+.cardBox .textTitle .title p {
+    font-weight: 600!important;
+    color: var(--text-dark) !important;
+    transition: all 0.5s ease !important;
+}
+
+.cardBox .textTitle .leftCrossArrow {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.cardBox p {
+    color: var(--text-grey) !important;
+}
+
+/* -------- responsive ----------- */
+@media screen and (max-width:1440px) {
+    .cardBox {
+        padding: 20px !important;
+        height: 170px !important;
+    }
+    .cardBox .textTitle {
+      margin-bottom: 20px!important;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .cardBox {
+        height: 150px !important;
+    }
+    .cardBox .textTitle {
+        margin-bottom: 10px!important;
+    }
+}
+@media screen and (max-width:1195px) {
+    .cardBox {
+        height: 130px !important;
+    }
+}
+
+@media screen and (max-width:1138px) {
+    .cardBox {
+        border-radius: 10px !important;
+        height: 140px !important;
+    }
+}
+
+@media screen and (max-width:891px) {
+    .cardBox {
+        border-radius: 10px !important;
+        padding: 20px !important;
+        height: 120px !important;
+    }
+}
+@media screen and (max-width:741px) {
+    .cardBox {
+        height: 140px !important;
+    }
+}
+@media screen and (max-width:647px) {
+    .cardBox {
+        height: 170px !important;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .cardBox {
+        height: auto !important;
+        padding: 30px !important;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .why-uispl {
+        padding: 30px 0px !important;
+    }
+}

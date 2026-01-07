@@ -1,0 +1,16 @@
+.profession_type {
+    padding: 0;
+}
+
+.profession_type .head-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profession_type .head-part h3 {
+    color: var(--text-primary)!important;
+    font-family: var(--poppins)!important;
+    font-weight: var(--fw-semibold)!important;
+    font-size:var(--fs-h5)!important;
+}

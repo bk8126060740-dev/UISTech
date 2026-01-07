@@ -1,0 +1,144 @@
+.job-testimonial {
+    padding: 0px 0 50px 0;
+}
+
+.job-testimonial h2 {
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.job-testimonial .job-testimonial-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.job-testimonial .job-testimonial-wrapper svg {
+   width: 16px;
+   height: 16px;
+   color: var(--text-grey);
+   cursor: pointer;
+}
+
+.testmonial-card {
+    width: 70%;
+}
+
+.testmonial-card h4 {
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testmonial-card p {
+    text-align: center;
+    color: var(--text-grey);
+    margin-bottom: 50px;
+}
+
+.testmonial-card .thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.testmonial-card .thumbnail .no-active-image img,
+.testmonial-card .thumbnail .active-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testmonial-card .thumbnail .no-active-image {
+    width:90px;
+    height:90px;
+    overflow: hidden;
+    border-radius: 300px;
+    margin-top: 30px;
+}
+.testmonial-card .thumbnail .active-image {
+    width:120px;
+    height:120px;
+    overflow: hidden;
+    border-radius: 300px;
+}
+
+.mobile-icon-section{
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .job-testimonial {
+        padding: 0px 0 45px 0;
+    }
+}
+
+@media screen and (max-width:768px) { 
+    .job-testimonial h2 {
+        margin-bottom: 30px;
+    }
+    .testmonial-card p {
+        margin-bottom: 40px;
+    }
+    .job-testimonial .job-testimonial-wrapper {
+        gap: 40px;
+    }
+    .testmonial-card .thumbnail .active-image {
+        width: 100px;
+        height: 100px;
+    }
+    .testmonial-card .thumbnail .no-active-image {
+        width: 60px;
+        height: 60px;
+        margin-top: 30px;
+    }
+    .testmonial-card h4 {
+        margin-bottom: 30px;
+    }
+    .testmonial-card .thumbnail {
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px) { 
+    .job-testimonial {
+        padding: 30px 0;
+    }
+    .job-testimonial h2 {
+        margin-bottom: 20px;
+    }
+    .testmonial-card h4 {
+        margin-bottom: 15px;
+    }
+    .job-testimonial .job-testimonial-wrapper {
+        gap: 0px;
+        justify-content: space-between;
+    }
+    .job-testimonial .job-testimonial-wrapper svg {
+        width: 14px;
+        height: 14px;
+    }
+    .testmonial-card {
+        width: 100%;
+    }
+    .iconNone{
+        display: none;
+    }
+
+    .mobile-icon-section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobileicon{
+        height: 16px;
+        width: 16px;
+        margin: 30px 60px 0px 60px;
+        color: var(--text-grey);
+    }
+
+}

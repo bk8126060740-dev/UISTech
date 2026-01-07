@@ -1,0 +1,371 @@
+.contact-place {
+    padding: 0 0 50px 0;
+}
+
+.contactform {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact_wrapper {
+    padding: 0 0 0 0;
+}
+
+.contact_wrapper h2:nth-child(1) {
+    text-transform: capitalize;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.our-location {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.our-location .image_box {
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.our-location .image_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.location-abs {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ---- location box ------ */
+.location-box {
+    width: 40%;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--bg-white);
+    margin-bottom: 0px;
+    transition: all 0.5s;
+}
+
+.location_image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    filter: grayscale(1);
+    transition: all 0.5s;
+    box-shadow: var(--shadow-light);
+    padding: 15px;
+    border-radius: 100%;
+}
+
+.location_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.location-box h6 {
+    text-align: center;
+    margin-bottom: 0px;
+    filter: grayscale(1);
+}
+
+.location-box:hover h6,
+.location-box:hover .location-fill-icon {
+    filter: grayscale(0);
+}
+
+.location-fill-icon {
+    width: 12px;
+    height: 12px;
+    color: var(--text-grey);
+    margin-bottom: 0px;
+    filter: grayscale(1);
+}
+
+.location-box .location-adress p {
+    color: var(--text-grey);
+    transition: all 0.5s;
+}
+
+.location-box:hover .location-adress p {
+    color: var(--text-dark);
+}
+
+.location-box:hover .location-fill-icon {
+    display: inline-block;
+}
+
+.location-box:hover .location_image {
+    filter: grayscale(0);
+}
+
+.location-box:hover .location_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.location-box:hover h6 {
+    display: block;
+}
+
+.location-box:hover .location-adress {
+    display: flex;
+}
+
+
+/* -------- upcoming location ----------- */
+.upcoming_location {
+    padding: 20px 0 10px 0;
+    text-align: center;
+
+}
+
+.upcoming_location h5 {
+    color: var(--text-primary);
+}
+
+.upcoming_location p {
+
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--text-grey);
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:1440px) {
+    .location_image {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:1086px) {
+    .contact-place {
+        padding: 0 0 30px 0;
+    }
+
+    .contact_wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .contactform {
+        width: 70%;
+    }
+
+    .upcoming_location {
+        text-align: center;
+    }
+
+    .upcoming_location h5 {
+        margin-bottom: 10px;
+    }
+
+    .location-box {
+        padding: 18px 15px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:1140px) {
+    .our-location .location-abs {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .location-box:hover .location_image {
+        width: auto;
+    }
+
+    .location-box .location_image,
+    .location-box h6,
+    .location-box .location-fill-icon {
+        filter: grayscale(0);
+    }
+
+    .our-location .image_box {
+        margin: 0 auto;
+        width: 60%;
+        position: relative;
+    }
+
+    .location-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .our-location {
+        flex-wrap: wrap;
+    }
+
+    .our-location .location-abs {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contactform {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact_wrapper h4 {
+        margin-bottom: 50px;
+    }
+
+    .our-location .location-abs,
+    .our-location .image_box {
+        width: 100%;
+    }
+
+    .location-box:hover .location_image {
+        width: auto;
+    }
+
+    .location-box .location_image,
+    .location-box h6,
+    .location-box .location-fill-icon {
+        filter: grayscale(0);
+    }
+
+    .our-location .image_box {
+        width: 100%;
+        position: relative;
+    }
+
+    .location-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .contact-place {
+        padding: 0 0 30px 0;
+    }
+
+    .d-not {
+        display: none;
+        opacity: 0;
+    }
+
+    .d-shown {
+        display: block;
+        opacity: 1;
+    }
+
+    .our-location {
+        padding: 0;
+    }
+
+    .location_image {
+        width: 64px;
+        height: 64px;
+        padding: 13px;
+    }
+
+    .location_image img {
+        object-fit: contain;
+    }
+
+    .location-abs {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .location-box .location-adress p {
+        color: var(--text-dark);
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .location-box {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-white);
+        padding: 12px;
+        gap: 15px;
+        border-radius: 15px;
+    }
+
+    .location-box .location-fill-icon,
+    .location-box .location-adress,
+    .location-box h6 {
+        display: inline-block;
+    }
+
+    .location-box .location-fill-icon,
+    .location-box h6 {
+        margin-bottom: 0;
+    }
+
+    .upcoming_location p {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width:466px) {
+
+    .contactform,
+    .location-box {
+        width: auto;
+    }
+
+    .upcoming_location {
+        padding: 0 0 10px 0;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .our-location .image_box {
+        height: 260px;
+    }
+
+    .boxSize {
+        width: 100%;
+    }
+
+    .boxwrap {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .location-adress p {
+        text-align: center;
+    }
+}

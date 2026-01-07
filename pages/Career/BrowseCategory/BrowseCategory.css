@@ -1,0 +1,295 @@
+.browse_by_category h2 {
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category_card {
+    min-height: 100px;
+    border: 1.6px solid var(--bg-primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.category_card .category_icon svg {
+    width: 35px;
+    height: 35px;
+    color: var(--text-primary);
+    transition: all 0.5s;
+}
+
+.category_card .category_content p:nth-child(1) {
+    font-weight: 600 !important;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+    transition: all 0.5s;
+}
+
+.category_card .category_content p {
+    font-weight: 400 !important;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-grey);
+    transition: all 0.5s;
+}
+
+
+.category_card:hover {
+    background-color: var(--bg-primary);
+    filter: drop-shadow(0px 0px 25px rgba(3, 51, 97, 0.3));
+}
+
+.category_card:hover .category_icon svg,
+.category_card:hover .category_content h5,
+.category_card:hover .category_content p {
+    color: var(--text-white);
+}
+
+.category_slider {
+    height: 200px;
+}
+
+.category_slider .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category_slider .swiper-pagination .swiper-pagination-bullet {
+    background: var(--text-grey);
+    width: 10px;
+    height: 10px;
+}
+
+.category_slider .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--bg-primary);
+    width: 14px;
+    height: 14px;
+}
+
+
+.more_category {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 0 0;
+}
+
+.more_category button {
+    width: 220px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+
+    text-transform: capitalize;
+    transition: all 0.5s;
+}
+
+.more_category button:hover {
+    color: var(--text-white);
+    background-color: var(--bg-primary);
+}
+
+.more_category button:hover svg {
+    color: var(--text-white);
+}
+
+.more_category button .show-less {
+    transform: rotate(180deg);
+}
+
+.more_category button svg {
+    width: 12px;
+    height: 12px;
+    color: var(--text-primary);
+    transition: all 0.5s;
+}
+
+/* --------- modal --------- */
+#job-dialog-title {
+    padding: 40px 0 20px 0;
+    position: relative;
+}
+
+#job-content-body {
+    padding: 0 30px 40px;
+}
+
+.close_btn {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-white);
+    position: absolute;
+    right: -16px;
+    top: -18px;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(3, 51, 97, 0.08);
+}
+
+.close_btn svg {
+    width: 20px;
+    height: 20px;
+    color: var(--text-primary);
+}
+
+.modal-title {
+    color: var(--text-primary);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.search_box {
+    width: 50%;
+    height: 40px;
+    background: var(--bg-white);
+    box-shadow: 0px 0px 10px rgba(3, 51, 97, 0.08);
+    border-radius: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 13px;
+}
+
+.search_box .icon_box {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-white);
+    box-shadow: 0px 0px 15px rgba(3, 51, 97, 0.15);
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_box .icon_box svg {
+    width: 14px;
+    height: 14px;
+    color: var(--text-primary);
+}
+
+.search_box .input_box {
+    width: 80%;
+    padding: 0 10px;
+}
+
+.search_box .input_box .MuiFormControl-root label {
+    font-weight: 600;
+    font-size: var(--fs-primary);
+    line-height: 24px;
+    color: var(--text-grey);
+}
+
+.search_box .input_box .MuiFormControl-root .MuiInput-root {
+    padding: 4px 0 15px;
+}
+
+.search_box .input_box .MuiFormControl-root .MuiInput-root:focus {
+    margin-top: 0;
+}
+
+.search_box .input_box .MuiFormControl-root .MuiInputBase-root::before,
+.search_box .input_box .MuiFormControl-root .MuiInputBase-root::after {
+    border: 0;
+}
+
+@media screen and (max-width:576px) {
+    #job-content-body {
+        padding: 0 20px 30px;
+    }
+
+    #job-dialog-title {
+        padding: 25px 35px;
+    }
+
+    .close_btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .category_card {
+        height: 100px;
+        border-radius: 10px;
+        gap: 20px;
+        border-width: 2px;
+        padding: 0 14px;
+    }
+
+    .search_box {
+        width: 100%;
+        height: 40px;
+        padding: 4px 8px;
+    }
+
+    .search_box .input_box .MuiFormControl-root label {
+        font-size: 10px;
+        line-height: 30px;
+    }
+
+    .search_box .icon_box {
+        width: 30px;
+        height: 28px;
+    }
+
+    .search_box .icon_box svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .modal-title {
+        font-size: var(--fs-primary);
+        line-height: 24px !important;
+        margin-bottom: 25px !important;
+    }
+
+
+    .close_btn {
+        width: 38px;
+        height: 38px;
+        right: -10px;
+    }
+}
+
+@media screen and (max-width:386px) {
+    #job-dialog-title {
+        padding: 40px 22px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .browse_by_category {
+        padding: 30px 0;
+    }
+
+    .more_category button {
+        width: 100%;
+    }
+
+    .more_category button {
+        max-width: 200px;
+        height: 50px;
+        gap: 15px;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+}

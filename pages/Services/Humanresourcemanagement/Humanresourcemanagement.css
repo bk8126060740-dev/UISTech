@@ -1,0 +1,298 @@
+/* ---- hr main ----- */
+.hrInfo {
+    padding: 45px 0 10px;
+}
+
+/* ------------------- */
+.Contractual-section {
+    background-color: var(--text-white);
+    height: 100%;
+}
+
+.hr-service-cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 240px;
+    padding-block: 20px;
+}
+
+.hr-image-box img {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    height: 600px;
+}
+
+.hr-image-box {
+    position: relative;
+    overflow: hidden;
+    margin-inline: 20px;
+    margin-block: 40px;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.hr-image-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    max-height: 600px;
+}
+
+.hr-text-box {
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    width: 100%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    height: 85%;
+}
+
+.hr-text-box p {
+    color: var(--text-white);
+}
+
+.hr-text-box h5 {
+    color: var(--text-white);
+    margin-block: 20px;
+    max-width: 85%;
+}
+
+.hr-text-box p {
+    color: var(--text-white);
+    max-width: 85%;
+    text-align: justify;
+    transition: all 0.5s ease-in-out;
+}
+
+.hr-btn-info p {
+    color: var(--text-white);
+    max-width: 100%;
+    text-align: justify;
+    transition: all 0.5s ease-in-out;
+}
+
+.hr-button-section {
+    display: flex;
+    justify-content: flex-end;
+    width: 85%;
+}
+
+.hr-text-box h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+
+    text-transform: none;
+    color: var(--text-white);
+    transition: all 0.5s ease-in-out;
+}
+
+.hr-btn-info {
+    display: flex;
+    align-items: center;
+}
+
+.hr-btn svg {
+    margin-left: 10px;
+    color: var(--text-white);
+}
+
+.animate-text {
+    position: relative;
+    animation: animateleft 0.2s ease-in-out;
+    left: 100%;
+}
+
+.hr-button-section {
+    position: relative;
+    animation: animatebottom 0.2s ease-in-out;
+    top: 100%;
+}
+
+.hr-mobile-active .animate-text {
+    animation: animateright 0.3s ease-in-out;
+    display: block;
+    position: relative;
+    left: 0%;
+}
+
+.hr-mobile-active .hr-button-section {
+    animation: animatetop 0.2s ease-in-out;
+    display: flex;
+    position: relative;
+    top: 0%;
+}
+
+.hr-mobile-active .hr-image-box::after {
+    background-color: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(4px);
+    transition: all 0.5s;
+}
+
+.hr-mobile-active .hr-image-box img {
+    transform: scale(1.4);
+    transition: all 0.5s;
+}
+
+.hr-btn:hover .hr-btn-divider {
+    border: 1px solid var(--text-white);
+    transition: all 0.3s ease-in;
+    border-radius: 20px;
+}
+
+.hr-btn-divider {
+    border: 1px solid transparent;
+}
+
+.cancle-btn {
+    display: none;
+}
+
+@keyframes animateright {
+    0% {
+        left: 100%;
+    }
+
+    25% {
+        left: 80%;
+    }
+
+    50% {
+        left: 60%;
+    }
+
+    75% {
+        left: 40%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes animateleft {
+    100% {
+        left: 100%;
+    }
+
+    75% {
+        left: 80%;
+    }
+
+    50% {
+        left: 60%;
+    }
+
+    25% {
+        left: 40%;
+    }
+
+    0% {
+        left: 0%;
+    }
+}
+
+@keyframes animatetop {
+    0% {
+        top: 13%;
+    }
+
+    25% {
+        top: 10%;
+    }
+
+    50% {
+        top: 7%;
+    }
+
+    75% {
+        top: 4%;
+    }
+
+    100% {
+        top: 0%;
+    }
+}
+
+@keyframes animatebottom {
+    0% {
+        top: 0%;
+    }
+
+    25% {
+        top: 4%;
+    }
+
+    50% {
+        top: 7%;
+    }
+
+    75% {
+        top: 10%;
+    }
+
+    100% {
+        top: 13%;
+    }
+}
+
+@media screen and (max-width:1799px) {
+    .hr-service-cards-section {
+        padding-inline: 20px;
+    }
+}
+
+@media screen and (max-width:1750px) {
+    .hr-service-cards-section {
+        padding-inline: 10px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .cancle-btn {
+        display: flex;
+        justify-content: flex-end;
+        width: 93%;
+        position: absolute;
+        top: -40px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .hr-service-cards,
+    .hr-mobile-active {
+        max-height: 455px !important;
+    }
+
+    .hr-image-box img {
+        height: 100%;
+        width: 100%;
+        max-width: 300px;
+        height: 400px;
+    }
+
+    .hr-image-box {
+        height: 400px;
+    }
+
+    .hr-image-box::after {
+        max-height: 400px;
+    }
+
+    .hr-btn svg {
+        height: 8px;
+        width: 8px;
+    }
+}

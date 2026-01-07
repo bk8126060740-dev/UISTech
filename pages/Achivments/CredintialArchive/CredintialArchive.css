@@ -1,0 +1,230 @@
+.creadintialArchive {
+    padding: 45px 0 0 0;
+}
+
+.creadintialArchive h2 {
+    text-transform: capitalize;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    padding: 0px;
+}
+
+/* -------------- new Design ------------------- */
+.creadintialArchive .MainBox {
+    margin-bottom: 40px;
+}
+.creadintialArchive .MainBox .wrapperBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.creadintialArchive .MainBox .wrapperBox .listOfDetails {
+    width: 50%;
+}
+
+.creadintialArchive .MainBox .wrapperBox .listOfDetails h5 {
+    font-weight: 400!important;
+    color: var(--text-grey);
+    margin-bottom: 22px;
+    transition: all 0.1s;
+    position: relative;
+    display: flex;
+    gap: 15px;
+    align-items: baseline;
+}
+
+.creadintialArchive .MainBox .wrapperBox .listOfDetails h5.activeP {
+    color: var(--text-primary);
+    font-weight: 600!important;
+    margin-bottom: 22px;
+}
+
+.activeSpan {
+    display: none;
+}
+
+.activeSpan {
+    display: block;
+}
+
+.DetailsWithMore h5 {
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    margin-top: -70px;
+}
+
+.DetailsWithMore.offcanvas h5 {
+    margin-top:0px;
+}
+
+.DetailsWithMore p {
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--text-grey);
+}
+
+.DetailsWithMore .thumb_image {
+    width: 100%;
+    height: 240px;
+    margin-top: 20px;
+}
+
+.DetailsWithMore .thumb_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.creadintialArchive .MainBox .wrapperBox .listOfDetails h5:hover + .DetailsWithMore .thumb_image img {
+    animation: fadeIn 0.5s linear forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ------------------ drawer offcanvas ------------ */
+.MuiDrawer-paper {
+    left: 0;
+    padding: 0 30px ;
+}
+
+.CloseIcon {
+    margin-top: 40px;
+    padding: 50px 0;
+    text-align: end;
+}
+
+
+
+@media screen and (max-width:1440px) {
+    .DetailsWithMore .thumb_image {
+     height: 210px;
+    }
+}
+@media screen and (max-width:1280px) {
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails {
+        width: 50%;
+    }
+}
+@media screen and (max-width:1096px) {
+    .DetailsWithMore h5 {
+        margin-bottom: 6px;
+      }
+  
+      .DetailsWithMore .thumb_image {
+          width: 100%;
+          height: 200px;
+          margin-top: 20px;
+      }  
+    .creadintialArchive .MainBox .wrapperBox .DetailsWithMore {
+        width: 45%;
+    }
+}
+@media screen and (max-width:1036px) {
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails {
+        width: 50%;
+    }
+    .activeSpan {
+        margin-right: 12px;
+    }
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails h5.activeP {
+        margin-bottom: 20px;
+        align-items: baseline;
+    }
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails h5 {
+        margin-bottom: 18px;
+    }
+    .DetailsWithMore h5 {
+        margin-bottom: 6px;
+    }
+    .DetailsWithMore .thumb_image {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:853px) {
+    .creadintialArchive {
+        padding: 30px 0 0 0;
+    }
+    .DetailsWithMore .thumb_image {
+        width: 100%;
+        height: 200px;
+    }
+    .creadintialArchive .MainBox .wrapperBox {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .activeSpan {
+        margin: 0;
+    }
+    .DetailsWithMore .thumb_image {
+        width: 50%;
+    }
+    .DetailsWithMore h4 {
+        color: var(--text-primary);
+        margin-bottom: 30px;
+    }
+    .creadintialArchive h2 {
+        margin-bottom: 20px;
+        text-align: start;
+        padding: 0px;
+    }
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails h5 {
+        margin-bottom: 12px;
+        gap: 10px;
+        color: var(--text-primary);
+    }
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails {
+        width: 100%;
+    }
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails h5 svg {
+    width: 10px !important;
+    height: 10px !important;
+    margin-right: 0px!important;
+    }
+    
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails h5.activeP {
+        margin-bottom: 12px;
+        text-decoration: underline;
+    }
+    .creadintialArchive .MainBox .wrapperBox .DetailsWithMore {
+        display: none;
+    }
+    .creadintialArchive .MainBox {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .MuiDrawer-paper {
+        padding: 0 15px;
+    }
+
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails h5,
+    .creadintialArchive .MainBox .wrapperBox .listOfDetails h5.activeP{
+        margin-bottom: 15px;
+        color: var(--text-primary);
+    }
+
+    .DetailsWithMore .thumb_image {
+        width: 100%;
+        height: 200px;
+    }
+    .wrapperBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}

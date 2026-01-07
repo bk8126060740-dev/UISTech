@@ -1,0 +1,81 @@
+h1 {
+  font-weight: var(--fw-bold);
+  font-size: var(--heading);
+  line-height: 57px;
+}
+
+h2 {
+  font-weight: var(--fw-bold) !important;
+  font-size: var(--sub-heading) !important;
+  line-height: 72px;
+  text-transform: capitalize !important;
+}
+
+h3 {
+  font-weight: var(--fw-bold) !important;
+  font-size: var(--sub-heading-md) !important;
+  line-height: 72px;
+}
+
+h4 {
+  font-weight: var(--fw-semibold) !important;
+  font-size: var(--fs-h4) !important;
+  line-height: 30px;
+}
+
+h5 {
+  font-weight: var(--fw-semibold) !important;
+  font-size: var(--fs-h5) !important;
+  line-height: 36px;
+}
+
+h6 {
+  font-weight: var(--fw-semibold) !important;
+  font-size: var(--fs-h6) !important;
+  line-height: 36px;
+}
+
+p {
+  font-weight: var(--fw-normal) !important;
+  font-size: var(--fs-primary) !important;
+  line-height: 27px;
+}
+
+.side-x-spacing {
+  padding: 0 100px;
+}
+
+.CustomizeBtn {
+  font-family: var(--poppins) !important;
+  font-size: var(--fs-sm) !important;
+  background-color: var(--text-primary) !important;
+  color: var(--text-white) !important;
+  text-transform: capitalize !important;
+  border-radius: 10px !important;
+  min-height: 40px !important;
+  height: auto !important;
+}
+
+@media screen and (max-width:1036px) {
+  .side-x-spacing {
+    padding: 0 70px;
+  }
+}
+
+@media screen and (max-width:921px) {
+  .side-x-spacing {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .side-x-spacing {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .side-x-spacing {
+    padding: 0;
+  }
+}

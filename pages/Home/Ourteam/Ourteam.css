@@ -1,0 +1,346 @@
+.our-team-main {
+    padding: 45px 0;
+}
+
+.ourteam-Text {
+    margin-bottom: 40px;
+}
+
+.ourteam-Text h2 {
+    color: var(--text-primary);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.membercard-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.member-details {
+    background-color: var(--bg-white);
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.member-details .member-photo {
+    position: relative;
+    width: 100%;
+    height: 270px;
+}
+
+.member-details .member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    z-index: 0;
+}
+
+.member-name {
+    width: 75%;
+    height: 40px;
+    background: var(--bg-primary);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+
+.member-name h6 {
+    color: var(--text-white);
+}
+
+.member-details .member-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px 10px 25px;
+}
+
+.member-details .member-media a {
+    width: 45px;
+    height: 45px;
+    background: var(--bg-white);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-details .member-media a .social_icon {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-details .member-media a .social_icon svg {
+    width: 22px;
+    height: 22px;
+    color: var(--text-dark);
+    transition: all 0.5s ease;
+}
+
+.member-details .member-media svg:hover {
+    color: var(--text-primary);
+}
+
+/* --------- carousel css ----*/
+.our-team-main .slick-list {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.our-team-main .slick-track {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-team-main .slick-initialized .slick-slide {
+    width: 320px !important;
+}
+
+.our-team-main .slick-prev,
+.our-team-main .slick-next {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(1, 34, 72, 0.1);
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-team-main .slick-prev:before,
+.slick-next:before {
+    color: var(--text-dark);
+    bottom: 0;
+    width: 100px;
+    z-index: 1;
+    display: none;
+}
+
+.our-team-main .slick-prev svg,
+.our-team-main .slick-next svg {
+    width: 12px;
+    height: 12px;
+    color: black;
+}
+
+.our-team-main .slick-prev {
+    left: 65px;
+}
+
+.our-team-main .slick-next {
+    right: 60px;
+}
+
+.our-team-main .slick-list {
+    width: 80%;
+}
+
+@media screen and (max-width:1300px) {
+    .our-team-main .slick-track {
+        gap: 30px;
+    }
+
+    .our-team-main .slick-list {
+        width: 100%;
+    }
+
+    .our-team-main .slick-prev {
+        left: -45px;
+    }
+
+    .our-team-main .slick-next {
+        right: -50px;
+    }
+
+}
+
+@media screen and (max-width:1080px) {
+    .our-team-main .slick-list {
+        width: 90%;
+    }
+
+    .our-team-main .slick-track {
+        gap: 20px;
+    }
+
+    .member-details .member-photo {
+        height: 200px;
+    }
+
+    .member-details .member-media a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .member-details .member-media a .social_icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* .member-details .member-photo img {
+        object-position: center;
+    } */
+
+    .member-name {
+        height: 35px;
+        bottom: -17px;
+    }
+
+    .member-details .member-media {
+        padding: 25px 10px 15px;
+    }
+}
+
+@media screen and (max-width:1036px) {
+    .our-team-main .slick-next {
+        right: 0;
+    }
+
+    .our-team-main .slick-prev {
+        left: 0;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .our-team-main .slick-list {
+        width: 100%;
+    }
+
+    .member-details .member-photo {
+        height: 225px;
+    }
+
+    .our-team-main .slick-prev,
+    .our-team-main .slick-next {
+        display: none;
+    }
+}
+
+@media screen and (max-width:781px) {
+    .our-team-main .slick-track {
+        gap: 15px;
+    }
+
+    .member-name {
+        height: 40px;
+    }
+
+    .member-details .member-media a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .member-details .member-media {
+        padding: 30px 10px 16px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .our-team-main {
+        padding: 50px 0 !important;
+    }
+
+    .ourteam-Text {
+        margin-bottom: 40px;
+    }
+
+    .member-name {
+        width: 200px;
+        height: 40px;
+        border-radius: 8px;
+        bottom: -18px;
+    }
+
+    .member-details .member-media {
+        padding: 50px 30px 0px 30px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+
+    .our-team-main .slick-initialized .slick-slide {
+        width: 350px !important;
+    }
+
+    .our-team-main .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        border-radius: 20px !important;
+    }
+
+    .our-team-main .slick-slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .member-details .member-media a {
+        width: 40px;
+        height: 40px;
+    }
+
+    .member-details .member-media {
+        padding: 40px 20px 15px 20px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .our-team-main .slick-list {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .member-details .member-photo {
+        height: 290px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .member-name {
+        bottom: -25px;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .member-details .member-photo {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .our-team-main .slick-list {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:382px) {
+    .member-name {
+        border-radius: 15px;
+    }
+}

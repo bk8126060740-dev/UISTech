@@ -1,0 +1,31 @@
+.admin-search-main {
+    width: 40%;
+}
+
+.admin-search-main .MuiFormControl-root {
+    width: 100%;
+}
+.admin-search-main .MuiFormControl-root .MuiInputBase-root {
+   display: flex;
+   align-items: center;
+}
+
+.admin-search-main .MuiFormControl-root .MuiInputBase-root {
+   font-size: var(--fs-primary) !important;
+   font-weight: var(--fw-normal) !important;
+}
+
+.admin-search-main .MuiFormControl-root .MuiInputBase-root .MuiInputAdornment-root {
+    margin-top: 4px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .admin-search-main {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 540px) {
+    .admin-search-main {
+        width: 100%;
+    }
+}

@@ -1,0 +1,207 @@
+.Privacy-main-section {
+    padding-block: 45px;
+}
+
+.Privacy-FirstSection-card-section {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.Privacy-FirstSection-card-section .image_Box {
+    width: 20%;
+}
+
+.Privacy-FirstSection-card-section .image_Box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Privacy-FirstSection-card-section .Privacy-FirstSection-card-info {
+    width: 80%;
+}
+
+.Privacy-FirstSection-card-section h3 {
+    color: var(--text-primary);
+}
+
+.FirstSection-card-divider {
+    border: 2px solid var(--text-primary) !important;
+    border-top-right-radius: 20px !important;
+    width: 260px !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+}
+
+.FirstSection-collection-card-divider {
+    width: 490px;
+}
+
+.Privacy-FirstSection-card-section p {
+    color: var(--text-grey);
+    text-align: justify;
+}
+
+.collection-card-section {
+    margin-block: 50px;
+}
+
+.Privacy-info-text h3 {
+    color: var(--text-primary);
+    margin-top: 30px;
+}
+
+.Privacy-info-text p {
+    color: var(--text-grey);
+    text-align: justify;
+    margin-block: 10px;
+}
+.Privacy-info-text p a{
+    color: var(--text-primary);
+    font-weight: 500!important;
+}
+
+.Sharing-info-section h2 {
+    color: var(--text-primary);
+    margin: 30px 0 20px 0;
+}
+
+.Sharing-info-section p {
+    color: var(--text-primary);
+    text-align: justify;
+}
+
+.Sharing-list-section {
+    display: flex;
+    margin: 8px 0;
+}
+
+.Sharing-list-section svg {
+    color: var(--text-grey);
+    margin-right: 12px;
+}
+
+.Sharing-list-section p {
+    color: var(--text-grey);
+    text-align: justify;
+}
+
+.Using-info-section {
+    margin-top: 40px;
+}
+
+.Using-text-info-section h3 {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.Using-steps-section {
+    margin: 5px 0px;
+}
+
+.Using-steps-section p span:nth-child(1) {
+    color: var(--text-primary);
+    margin-right: 8px;
+}
+
+.Using-steps-section p span:nth-child(2) {
+    color: var(--text-grey);
+}
+
+.Using-steps-info-section p:nth-child(1) {
+    color: var(--text-primary);
+    text-align: justify;
+    margin: 30px 0 15px 0;
+}
+
+.Using-steps {
+    display: flex;
+    margin-block: 8px;
+}
+
+.Using-steps svg {
+    color: var(--text-grey);
+    margin-right: 12px;
+}
+
+.Using-steps h4 {
+    color: var(--text-grey);
+    text-align: justify;
+}
+
+.Using-steps p {
+    color: var(--text-grey);
+}
+
+.Other-info-section {
+    margin-block: 20px;
+}
+
+.Other-info-section h3 {
+    color: var(--text-primary);
+}
+
+.Other-info-section h6 {
+    color: var(--text-primary);
+    text-align: justify;
+    margin: 15px 0 10px 0;
+}
+
+.Other-info-steps-section {
+    display: flex;
+}
+
+.Other-info-steps-section svg {
+    color: var(--text-grey);
+    margin-right: 12px;
+}
+
+.Other-info-steps-section p {
+    color: var(--text-grey);
+}
+
+.Other-info-section h4 {
+    color: var(--text-grey);
+    text-align: justify;
+}
+
+.Mobile-title-section h2 {
+    display: none;
+}
+
+@media screen and (max-width:1023px) {
+    .Mobile-title-section h2 {
+        color: var(--text-primary);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Privacy-main-section {
+        padding-block: 30px;
+    }
+
+    .FirstSection-card-divider {
+        display: none !important;
+    }
+
+    .Privacy-FirstSection-card-section .image_Box {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .Privacy-FirstSection-card-section .Privacy-FirstSection-card-info {
+        width: 100%;
+    }
+
+    .Privacy-FirstSection-card-section {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .Privacy-FirstSection-card-section h3 {
+        margin-bottom: 12px;
+    }
+}
