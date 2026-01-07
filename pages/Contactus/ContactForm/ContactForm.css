@@ -1,0 +1,392 @@
+/* ------------------ Contact Form ------------------- */
+.contact-form {
+    padding: 0px;
+    width:auto;
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.contact-form button {
+    border: 2px solid var(--bg-primary);
+    color: var(--bg-primary);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 15px auto 0 auto;
+    display: block;
+    border-radius: 8px;
+    width: 120px;
+    text-transform: capitalize;
+}
+
+
+/* ------------------------------ Career Form -------------------------------------- */
+.career-form {
+    padding: 0px 30px;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    height: auto;
+}
+
+.career-form button {
+    border: 2px solid var(--bg-primary);
+    color: var(--bg-primary);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px auto 0 auto;
+    display: block;
+    border-radius: 10px;
+    width: 150px;
+    text-transform: capitalize;
+}
+
+/* ----------------- ects Form ----------------- */
+.elderly-form {
+    padding: 40px 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.elderly-form .MuiStack-root {
+    padding-top: 0px;
+}
+
+.elderly-submit-button {
+    border: 2px solid var(--bg-primary);
+    color: var(--bg-primary);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0px 0px 10px;
+    display: block;
+    border-radius: 10px;
+    width: 250px;
+    height: 60px;
+    text-transform: capitalize;
+}
+
+.dateField svg {
+    color: var(--text-grey);
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.dateField .MuiFormControl-root {
+    min-width: none;
+    width: 100%;
+}
+
+/* --------------------------------------------- */
+.pdfinputField {
+    margin: 20px 10px 0px 10px;
+}
+
+.pdfinputField input {
+    display: none;
+}
+
+/* input Field */
+.inputField p,
+.pdfinputField p:nth-child(1),
+.dateField p,
+.selectField p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 5px 10px;
+    color: var(--text-dark);
+}
+
+.inputField p span,
+.pdfinputField p span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text-grey);
+    margin-left: 5px;
+}
+
+.inputField,
+.dateField,
+.selectField {
+    margin: 10px 10px 0 10px;
+}
+
+.inputField .Mui-error {
+    font-size: 14px;
+    margin: 0;
+}
+
+.inputField .MuiOutlinedInput-root,
+.dateField .MuiOutlinedInput-root {
+    margin-bottom: 0;
+    border-radius: 10px;
+    border: 0;
+    overflow: hidden;
+}
+
+.inputField .MuiOutlinedInput-root textarea,
+.dateField .MuiOutlinedInput-root textarea {
+    height: 100px !important;
+}
+
+.inputField .MuiOutlinedInput-root fieldset,
+.dateField .MuiOutlinedInput-root fieldset {
+    border: 2px solid var(--text-grey);
+    outline: none;
+}
+
+.css-18pjc51-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: var(--text-grey);
+}
+
+.career::-webkit-file-upload-button {
+    display: none !important;
+}
+
+.pdf-input {
+    border: 2px solid var(--text-grey);
+    border-radius: 10px;
+    height: 56px;
+    margin-bottom: 0px;
+    width: 75%;
+}
+
+.pdf-input-label {
+    width: inherit;
+    display: flex;
+    height: inherit;
+    padding-left: 16px;
+    align-items: center;
+    font-size: 14px;
+    color: var(--text-grey);
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.pdf-input-section {
+    display: flex;
+}
+
+.pdf-input-btn {
+    background-color: var(--text-dark);
+    height: 58px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pdf-input-btn p:nth-child(1) {
+    color: var(--text-white);
+    padding: 0;
+}
+
+.selectField .MuiSelect-root {
+    /* height: 100%; */
+    padding: 16.5px 14px;
+    border-radius: 10px;
+}
+
+.selectField svg {
+    color: var(--text-grey);
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    pointer-events: none;
+}
+
+/* ---------------- Appply For Job ---------------------- */
+.Apply-form,
+.elderly-form {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.Apply-form .apply-field-wrapper,
+.elderly-form .apply-field-wrapper {
+    width: 50%;
+}
+
+.Apply-form button {
+    border: 2px solid var(--bg-primary);
+    color: var(--bg-primary);
+    font-size: var(--fs-primary);
+    margin: 30px auto 0 auto;
+    display: block;
+    border-radius: 10px;
+    width: 20%;
+    height: 40px;
+    text-transform: capitalize;
+}
+
+.Apply-form .pdf-input {
+    border: 2px solid var(--bg-primary);
+    border-radius: 10px 0 0 10px;
+    height: 46px;
+    margin-bottom: 0px;
+    width: 75% !important;
+}
+
+.Apply-form .pdf-input-section,
+.career-form .pdf-input-section {
+    flex-direction: row !important;
+}
+
+.Apply-form .pdf-input-btn {
+    background-color: var(--text-dark);
+    height: 48px;
+    margin-left: 0;
+    border-radius: 0 10px 10px 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--text-dark);
+}
+
+
+/* -------------------- Responsive -------------------------- */
+@media screen and (max-width:1023px) {
+    .pdf-input-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pdf-input-btn {
+        width: 130px !important;
+        margin-left: 0px !important;
+    }
+
+    .pdf-input {
+        width: 100% !important;
+    }
+
+    .pdfinputField {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .career-form {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .pdf-input-label {
+        font-size: 12px;
+        padding-left: 14px;
+    }
+
+    .inputField p,
+    .dateField p,
+    .selectField p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .inputField p span,
+    .pdfinputField p span {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .contact-form {
+        padding: 30px 0;
+    }
+
+    .pdf-input-btn {
+        border-radius: 0 10px 10px 0;
+        border: 1px solid;
+    }
+
+    .pdf-input {
+        border-radius: 10px 0 0 10px;
+        width: 74% !important;
+    }
+
+    .inputField .MuiOutlinedInput-root,
+    .dateField .MuiOutlinedInput-root,
+    .selectField .MuiInputBase-root {
+        height: 50px;
+        border-radius: 8px;
+    }
+
+    .Apply-form .pdf-input {
+        height: 47px;
+    }
+
+    .Apply-form .pdf-input-btn {
+        border-width: 2px;
+        height: 47px;
+    }
+
+    .pdf-input-section {
+        width: 100% !important;
+        max-width: 310px;
+        margin: 0 auto;
+    }
+
+    .Apply-form button {
+        width: 50%;
+        border-radius: 6px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .pdf-input-section { 
+        margin: 0;
+    }
+    .pdf-input-section {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .elderly-form {
+        width: 100% !important;
+    }
+
+    .mobilewrapper {
+        width: 100% !important;
+    }
+
+    .inputField,
+    .dateField,
+    .selectField {
+        margin: 20px 0 0 0;
+    }
+
+    .Apply-form .apply-field-wrapper {
+        width: 95%;
+    }
+
+    .Apply-form button {
+        width: 40%;
+    }
+
+    .elderly-submit-button {
+        margin: 20px 0px 0px 0px;
+    }
+}
+

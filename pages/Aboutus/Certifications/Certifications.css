@@ -1,0 +1,60 @@
+.certifications {
+    overflow: hidden;
+    display: none;
+    max-height: 183px;
+    padding: 0 0 45px 0;
+}
+
+.certifications h2 {
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.imageBox {
+    width: auto !important;
+}
+
+.imageBox img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.certifications .slick-list {
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.certifications .slick-slider button {
+    display: none !important;
+}
+
+@media screen and (max-width:768px) {
+    .certifications {
+        display: block;
+    }
+
+    .certifications .slick-list {
+        overflow: hidden;
+        padding: 0 50px !important;
+    }
+
+    .certifications .slick-initialized .slick-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .certifications {
+        padding: 0 0 0 0;
+    }
+}
+
+@media screen and (max-width:331px) {
+    .certifications .slider-container {
+        width: 300px !important;
+    }
+}

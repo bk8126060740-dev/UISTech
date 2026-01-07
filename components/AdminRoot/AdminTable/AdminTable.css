@@ -1,0 +1,144 @@
+.search-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 12px;
+}
+
+.tbl_head_td {
+    font-family: var(--poppins) !important;
+    font-size: var(--fs-sm) !important;
+    font-weight: var(--fw-semibold);
+    color: var(--text-white) !important;
+    background-color: var(--bg-primary) !important;
+    padding: 8px 10px !important;
+    min-width: auto;
+    white-space: nowrap;
+}
+
+/* Body styling */
+.tbl_body_td {
+    font-family: var(--poppins) !important;
+    font-size: var(--fs-sm) !important;
+    font-weight: var(--fw-normal) !important;
+    color: var(--text-grey) !important;
+    padding: 8px 10px !important;
+    border: 0;
+    width: auto;
+    white-space: nowrap;
+}
+
+.tbl_head_td.action,
+.tbl_body_td.action {
+    /* display: inline-block; */
+    width: 8%;
+}
+
+.icon_row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon_row svg {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.icon_row svg.download {
+    width: 16px;
+    height: 16px;
+    color: var(--text-dark);
+}
+
+.icon_row svg.edit {
+    color: var(--text-primary);
+}
+
+.icon_row svg.delete {
+    color: var(--red);
+}
+
+.icon_row svg.ibutton {
+    color: var(--text-grey);
+}
+
+.image_Box {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.image_Box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .search-pagination {
+        flex-wrap: wrap;
+    }
+
+    .table_main {
+        width: 100%;
+        table-layout: auto;
+    }
+
+    .tbl_head_td,
+    .tbl_body_td {
+        display: block;
+        width: 100%;
+        padding: 12px 8px;
+        box-sizing: border-box;
+    }
+
+    .tbl_body_td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .icon_row {
+        gap: 10px;
+    }
+
+    .tbl_head_td,
+    .tbl_body_td {
+        font-size: var(--fs-xs);
+    }
+
+    .icon_row svg {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .tbl_head_td,
+    .tbl_body_td {
+        font-size: var(--fs-xs);
+    }
+}
+
+@media (max-width: 430px) {
+    .tablePagination .MuiToolbar-root {
+        justify-content: flex-end;
+    }
+
+    .MuiTablePagination-actions {
+        padding: 0px;
+        margin-left: 5px !important;
+    }
+
+    .MuiTablePagination-actions button {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,342 @@
+.header-main {
+    padding: 0 50px !important;
+    transition: top 0.3s ease !important;
+}
+
+.backdrop-blur {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.header-call a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-primary);
+}
+
+.header-call a svg {
+    width: 15px;
+    height: 15px;
+}
+
+.Navbarmenu {
+    position: relative;
+}
+
+.Navbarmenu {
+    white-space: nowrap;     /* 🔥 text break band */
+    flex-wrap: nowrap;
+}
+
+.header-call a {
+    white-space: nowrap;     /* Contact Us text ek line me */
+}
+
+
+/* .Navbarmenu {
+    text-decoration: none;
+    color: var(--text-dark);
+    position: relative;
+    transition: color 0.3s ease;
+} */
+
+.Navbarmenu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--text-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.Navbarmenu:hover,
+.Navbarmenu svg:hover,
+.Navbarmenu:hover svg {
+    color: var(--text-primary);
+    opacity: 1;
+}
+
+.Navbarmenu:hover::after {
+    transform: scaleX(1);
+}
+
+.Navbarmenu svg {
+    transition: all 0.5s;
+}
+
+.topdownarrow {
+    transform: rotate(180deg);
+}
+
+/* ---------- DropDown Menu ----------------- */
+
+.dropDown {
+    background-color: var(--bg-white);
+    position: absolute;
+    top: 84px;
+    width: auto;
+    min-width: 230px;
+    border-radius: 15px;
+    z-index: -2;
+    padding: 25px 24px;
+    display: flex;
+    align-items: normal;
+    box-shadow: var(--shadow-box);
+}
+
+#polygonParent {
+    position: absolute;
+    top: -10px;
+    transform: rotate(30deg);
+    color: var(--text-white);
+    width: 15px;
+    height: 15px;
+    left: 86px;
+}
+
+.dropDown .menu-box li:hover,
+.idActive {
+    background-color: var(--bg-hover-primary) !important;
+    border: 1.5px solid var(--bg-blue) !important;
+    border-radius: 15px !important;
+}
+
+.dropDown .menu-box li:hover svg#polygonSvg,
+.dropDown .menu-box .idActive svg#polygonSvg {
+    display: block;
+}
+
+.dropDown li {
+    padding: 18px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dropDown li svg#polygonSvg {
+    display: none;
+}
+
+.dropDown li svg#polygonSvg {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    color: var(--bg-blue);
+    right: -14px;
+}
+
+.menu-box {
+    padding-right: 25px;
+}
+
+.meuline {
+    border: 1px solid #D9D9D9;
+    border-radius: 60px;
+}
+
+.dropDown li {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-dark);
+    transition: all 0.5 ease;
+}
+
+.dropDown li svg {
+    width: 25px;
+    height: 25px;
+}
+
+.dropDown li p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: var(--text-dark);
+    transition: all 0.5 ease;
+}
+
+.dropDown li:hover a,
+.dropDown li:hover p,
+.dropDown .menu-box .idActive,
+.dropDown .menu-box .idActive p {
+    color: var(--text-primary);
+}
+
+.dropdown-submenu li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 15px;
+}
+
+.dropdown-submenu li,
+.dropdown-submenu li p {
+    line-height: 22px;
+    color: var(--text-primary);
+    text-transform: capitalize !important;
+}
+
+.dropdown-submenu li svg {
+    width: 25px;
+    height: 25px;
+}
+
+.css-l1mlax-MuiContainer-root {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* ---------- Hidden Box for Mouse Out ---------- */
+
+.header-service-hidden-section {
+    position: fixed;
+    z-index: -3;
+    background-color: transparent;
+    width: 50%;
+    height: 50px;
+    left: 0;
+}
+
+.header-aboutus-hidden-section {
+    position: fixed;
+    z-index: -3;
+    background-color: transparent;
+    width: 39%;
+    height: 50px;
+    left: 0;
+}
+
+.header-main.active {
+    box-shadow: 0px 5px 6px 0px #4343432b;
+}
+
+@media screen and (max-width:1300px) {
+    .Navbarmenu {
+        font-size: 10px;
+        padding: 5px 8px 5px 8px;
+        gap: 8px;
+    }
+}
+
+/* --------------- responsive ------------------ */
+@media screen and (max-width:1110px) {
+    .header-main {
+        padding: 0 20px !important;
+    }
+
+    .header-call a {
+        gap: 6px;
+    }
+
+    .header-call a svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    .header-call a span {
+        font-size: 12px;
+    }
+    .Navbarmenu {
+        font-size: 14px !important;
+    }
+
+    .Navbarmenu svg {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* -------------- responsive ------------- */
+
+@media screen and (max-width:2500px) {
+    .dropDown.setServiceResposnive {
+        left: -275px;
+    }
+
+    .dropDown.setServiceResposnive #polygonParent {
+        left: 45%;
+    }
+}
+
+@media screen and (max-width:1495px) {
+    .dropDown.setHeaderResonsive {
+        left: -85px;
+    }
+
+    .dropDown.setHeaderResonsive #polygonParent {
+        left: 34%;
+    }
+}
+
+@media screen and (max-width:1110px) {
+    .header-main {
+       height: 80px!important;
+    }
+    .dropDown {
+        padding: 20px 15px;
+    }
+
+    .dropDown li {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .dropDown li svg,
+    .dropdown-submenu li svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .dropdown-submenu li,
+    .dropdown-submenu li p {
+        line-height: 14px;
+    }
+
+    .dropdown-submenu li {
+        padding: 5px 15px;
+    }
+
+    .dropDown.setServiceResposnive #polygonParent {
+        left: 55%;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .Navbarmenu {
+        font-size: 12px !important;
+    }
+}
+
+
+@media screen and (max-width:899px) {
+    .backdrop-blur {
+        position: relative !important;
+    }
+
+    /* .header-main {
+        padding: 0 !important;
+    } */
+
+
+    .header-main {
+    padding: 0 !important;
+    transition: top 0.3s ease !important;
+}
+
+    .header-main.active {
+        position: fixed !important;
+        left: 0 !important;
+        right: 0 !important;
+        padding: 0 20px !important;
+    }
+}

@@ -1,0 +1,55 @@
+.wrapperbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input-field {
+    padding: 10px 0 5px;
+    width: 48%;
+}
+
+.input-field.textareaBox {
+    width: 100%;
+}
+
+.input-field label {
+    display: block;
+    font-size: var(--fs-sm);
+    margin-bottom: 5px;
+}
+
+.input-field textarea,
+.input-field input,
+.input-field select {
+    width: 100%;
+    border: 0;
+    background: var(--white-grey);
+    padding: 0 8px;
+    border-radius: 6px;
+    color: var(--text-dark);
+    outline: none;
+    position: relative;
+}
+
+.input-field textarea {
+    width: 98%;
+    padding: 10px 8px;
+}
+
+.input-field input {
+    width: 97%;
+    height: 45px;
+}
+
+.input-field select {
+    height: 45px;
+}
+
+@media screen and (max-width:620px) {
+    .input-field {
+        width: 100%;
+    }
+}

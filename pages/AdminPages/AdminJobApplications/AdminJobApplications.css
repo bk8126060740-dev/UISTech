@@ -1,0 +1,39 @@
+.AllJobApplications {}
+
+
+
+.data_preview {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--text-lightgrey);
+}
+
+.data_preview h6 {
+    font-family: var(--poppins);
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-medium);
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.data_preview p {
+    font-family: var(--poppins);
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-mormal);
+    color: var(--text-grey);
+}
+
+.data_preview a {
+    font-family: var(--poppins);
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-mormal);
+    color: var(--text-primary);
+}
+
+.modalTitle {
+    font-family: var(--poppins);
+    font-size: var(--fs-h5);
+    text-align: center;
+    padding: 10px 0;
+    font-weight: var(--fw-mormal);
+    color: var(--text-primary);
+}

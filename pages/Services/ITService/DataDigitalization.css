@@ -1,0 +1,764 @@
+.dd-main-section {
+    padding: 50px 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--text-white);
+}
+
+/* ------ _seemore -------*/
+._seemore {
+    background-color: var(--bg-white);
+    box-shadow: 0px -20px 20px 3px var(--bg-white);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    max-width: 800px;
+}
+
+._seemore p {
+    font-weight: 500 !important;
+    letter-spacing: -0.01em;
+    color: var(--text-primary) !important;
+    text-align: center !important;
+    cursor: pointer;
+}
+
+._seemore p svg {
+    width: 12px;
+    height: 12px;
+    color: var(--text-primary);
+    margin-left: 14px;
+}
+
+/* /----------------------- */
+.dd-title-section h2,
+.hrms-title-section h2 {
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.dd-info-card-section {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.dd-info-card-section img {
+    margin-right: 50px;
+}
+
+.dd-info-card-section p,
+.hrms-card-section p {
+    font-weight: 500 !important;
+    line-height: 24px !important;
+}
+
+.dd-info-card-section p,
+.hrms-card-section p {
+    color: var(--text-primary);
+    text-align: justify;
+}
+
+.hrms-title-section {
+    display: flex;
+    justify-content: center;
+}
+
+.hrms-card-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.hrms-card-section .card-image-main {
+    width: 40%;
+}
+
+.hrms-card-section .card-detail-main {
+    width: 60%;
+    position: relative;
+}
+
+.hrms-card-section .card-image-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dd-info-section {
+    margin-top: 40px;
+    display: flex;
+}
+
+.dd-info-section h5 {
+    color: var(--text-primary);
+    line-height: 24px;
+    margin-bottom: 18px;
+}
+
+.dd-info-section p {
+    color: var(--text-grey);
+    line-height: 25px;
+}
+
+.dd-steps-section {
+    display: flex;
+    align-items: baseline;
+    margin-top: 5px;
+}
+
+.dd-steps-section p {
+    color: var(--text-grey);
+    text-align: justify;
+    max-width: 750px;
+}
+
+.dd-steps-section svg {
+    color: var(--text-grey);
+    margin-right: 12px;
+    height: 10px;
+    width: 10px;
+}
+
+.dd-left-info-section {
+    width: 50%;
+    padding-block: 0px;
+    position: relative;
+}
+
+.dd-right-info-section {
+    width: 50%;
+    padding-block: 0px;
+    position: relative;
+}
+
+.dd-info-divider {
+    border: 1.2px solid var(--text-primary) !important;
+    height: 100% !important;
+    margin-inline: 25px !important;
+    border-radius: 100px !important;
+}
+
+.steps-title-text {
+    margin-top: 10px !important;
+    color: var(--text-primary) !important;
+}
+
+.dd-card-marque-section {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.dd-card-marque-section img {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.dd-marque-card {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.dd-card-section {
+    height: 400px;
+    width: 540px;
+    background-color: var(--text-white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    margin-right: 30px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.dd-card-sub-section {
+    padding-block: 30px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dd-card-sub-section .see_more,
+.dd-mobile-info-section .see_more {
+    cursor: pointer;
+    color: var(--text-primary);
+    text-align: end;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.dd-card-sub-section svg {
+    color: var(--text-primary);
+}
+
+.dd-card-section h6 {
+    color: var(--text-primary);
+    margin-block: 0px;
+    text-align: center;
+}
+
+.dd-marque-card-steps {
+    display: flex;
+    margin-top: 5px;
+    align-items: baseline;
+}
+
+.dd-marque-card-steps svg {
+    color: var(--text-grey);
+    margin-right: 20px;
+}
+
+.dd-card-section p {
+    color: var(--text-grey);
+    text-align: left;
+    width: 410px;
+}
+
+.dd-mobile-card-section {
+    display: none;
+}
+
+.hrms-section {
+    padding: 50px 0;
+}
+
+.hrms-card-section {
+    margin-top: 30px;
+    display: flex;
+}
+
+.hrms-card-section img {
+    margin-right: 50px
+}
+
+.hrms-steps-section {
+    display: flex;
+    align-items: baseline;
+    margin-top: 12px;
+}
+
+.hrms-steps-title-section {
+    margin-block: 5px;
+}
+
+.hrms-steps-section svg {
+    color: var(--text-grey);
+    margin-right: 12px;
+}
+
+.hrms-steps-section p {
+    color: var(--text-grey);
+}
+
+/* ------------------ DialogBox ---------------------- */
+.MuiDialog-paper {
+    border-radius: 15px;
+    padding: 12px 20px 20px;
+    height: auto;
+}
+
+.DialogBox h2#alert-dialog-title svg {
+    width: 60px;
+    height: 60px;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.DialogBox h2#alert-dialog-title h5 {
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.Box_details .details_step {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.Box_details .details_step svg {
+    color: var(--text-grey);
+}
+
+.Box_details .details_step p {
+    color: var(--text-grey);
+}
+
+.close_dialog_btn {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: var(--text-primary) !important;
+}
+
+.details_svg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dd-marque-card-img-section {
+    height: 430px;
+    position: relative;
+}
+
+.dd-marque-card-img-section img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+    .MuiDialog-paper {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .DialogBox h2#alert-dialog-title svg {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .DialogBox h2#alert-dialog-title h5 {
+        margin-bottom: 5px;
+    }
+}
+
+.dd-card-marque-section {
+    position: relative;
+}
+
+/* --------------------------------------------------- */
+@media screen and (max-width:1440px) {
+    .dd-marque-card {
+        margin-left: 0%;
+    }
+
+    .dd-card-marque-section img {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .dd-info-section {
+        margin-top: 100px;
+    }
+
+    .dd-steps-section p {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .dd-info-section {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .dd-info-card-section {
+        margin-top: 50px;
+    }
+
+    .dd-info-section {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .hrms-card-section .card-image-main {
+        height: 500px;
+    }
+
+    .hrms-card-section .card-image-main img {
+        object-fit: contain;
+    }
+
+    .hrms-card-section .card-image-main {
+        width: 100%;
+    }
+
+    .hrms-card-section .card-detail-main {
+        width: 100%;
+    }
+
+    ._seemore {
+        max-width: 100%;
+    }
+
+    .dd-info-card-section {
+        flex-direction: column;
+    }
+
+    .dd-info-card-section {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .dd-info-image-section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .dd-info-card-section img {
+        margin-right: 0px;
+        width: 180px;
+        height: 160px;
+    }
+
+    .dd-info-divider-section {
+        display: none;
+    }
+
+    .dd-info-section {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .dd-left-info-section {
+        width: 100%;
+    }
+
+    .dd-right-info-section {
+        width: 100%;
+        padding-block: 0px;
+        margin-top: 40px;
+    }
+
+    .dd-info-section h5 {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .dd-info-section p {
+        color: var(--text-grey);
+    }
+
+    .steps-title-text {
+        margin-top: 30px !important;
+    }
+
+    .steps-title-text {
+        color: var(--text-grey) !important;
+    }
+
+    .analytics-service-info {
+        color: var(--text-primary) !important;
+    }
+
+    .dd-card-marque-section {
+        margin-top: 0px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .dd-marque-card-img-section {
+        width: 100%;
+    }
+
+    .hrms-title-section h2 {
+        margin-top: 0px;
+        color: var(--text-primary);
+    }
+
+    .hrms-section {
+        padding-block: 30px;
+    }
+
+    .hrms-card-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .hrms-card-section img {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .dd-marque-card-img-section {
+        height: 320px;
+    }
+
+    .dd-info-image-section {
+        width: 100%;
+        height: 420px;
+    }
+
+    .dd-info-image-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .hrms-section {
+        padding-block: 30px;
+    }
+
+    .hrms-card-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .dd-card-marque-section {
+        margin-top: 0px;
+        width: 100%;
+        margin-bottom: 0;
+
+    }
+
+    .dd-card-marque-section img {
+        height: 100%;
+        width: inherit;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .dd-marque-card {
+        display: none;
+    }
+
+    .dd-mobile-card-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: -310px;
+    }
+
+    .carouselSlide {
+        max-width: 100%;
+        height: 290px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .dd-mobile-info-section .see_more {
+        text-align: center;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .see_more svg {
+        height: 12px;
+        width: 12px;
+    }
+
+    .carousel-cell {
+        margin-top: 10.5px;
+        margin-right: 20px;
+        margin-bottom: 25px;
+        max-width: 270px;
+        width: 100%;
+        height: 250px;
+        border-radius: 15px;
+        counter-increment: carousel-cell;
+        transition: all 0.1s ease;
+        background: white;
+        box-shadow: none;
+    }
+
+    .carousel-cell.is-selected {
+        height: 270px;
+        filter: blur(0);
+        margin-top: 1px;
+        opacity: 1;
+        background: white;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.18);
+        z-index: 1;
+    }
+
+    .slick-active .dd-mobile-info-section svg {
+        color: var(--text-primary);
+    }
+
+    .dd-mobile-info-section {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80%;
+        background-color: white;
+        border-radius: 15px;
+        margin-top: 5px;
+        max-width: 430px;
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+
+    .slick-active {
+        transition: all 0.5s;
+    }
+
+    .slick-active .dd-mobile-info-section {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 85%;
+        background-color: white;
+        margin-inline: 10px;
+        border-radius: 15px;
+        margin-top: 0px;
+        max-width: 430px;
+        overflow: hidden;
+    }
+
+    .dd-mobile-info-section svg {
+        color: var(--text-grey);
+    }
+
+    .dd-mobile-card {
+
+        height: 270px;
+        width: 270px;
+    }
+
+    .dd-mobile-card h5 {
+        color: var(--text-grey);
+        text-align: center;
+        margin-block: 8px;
+    }
+
+    .slick-active .dd-mobile-info-section h5 {
+        color: var(--text-primary);
+    }
+
+    .dd-mobile-card-steps {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .dd-mobile-card-steps svg {
+        color: var(--text-grey) !important;
+        margin-right: 10px;
+    }
+
+    .slick-active .dd-mobile-card-steps {
+        margin-top: 10px;
+    }
+
+    .dd-mobile-card-steps p {
+        color: var(--text-grey);
+    }
+
+    .hrms-card-section .card-image-main {
+        width: 100%;
+    }
+
+    .hrms-card-section .card-detail-main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .hrms-card-section img {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .dd-main-section {
+        padding: 40px 0 0;
+    }
+
+    .dd-info-image-section {
+        width: 100%;
+        height: 290px;
+    }
+
+    .dd-mobile-card-steps p {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .dd-title-section h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .hrms-card-section img {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .dd-title-section h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .hrms-card-section img {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .dd-card-sub-section svg,
+    .dd-marque-card-steps svg,
+    .hrms-steps-section svg {
+        height: 10px;
+        width: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .hrms-card-section .card-image-main {
+        height: 250px;
+    }
+
+    .dd-main-section {
+        padding: 40px 0 0;
+    }
+
+    .hrms-card-section img {
+        margin-right: 0px;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .dd-title-section h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .hrms-card-section img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .hrms-card-section img {
+        height: 250px;
+        width: 250px;
+    }
+}

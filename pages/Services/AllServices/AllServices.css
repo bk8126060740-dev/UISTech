@@ -1,0 +1,425 @@
+.comprehensive_services {
+    padding: 50px 0 0 0;
+}
+
+.comprehensive_services h2 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 45px;
+}
+
+.more-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    padding: 35px 0;
+}
+
+.more-btn h6 {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-dark);
+}
+
+.viewAllServices {
+    background: transparent !important;
+    border-radius: 100px !important;
+    box-shadow: var(--shadow-light) !important;
+    padding: 8px !important;
+    border: 1px solid var(--bg-primary) !important;
+}
+
+.viewAllServices span {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    font-weight: 500 !important;
+    color: var(--text-primary) !important;
+    display: none !important;
+}
+
+.viewAllServices .svgBg {
+    width: 30px !important;
+    height: 30px !important;
+    background-color: var(--bg-primary) !important;
+    border-radius: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px !important;
+}
+
+.viewAllServices .svgBg svg {
+    width: 12px !important;
+    height: 12px !important;
+    color: var(--text-white) !important;
+}
+
+/* -------- tab list ---------- */
+.services_tabs {
+    margin-bottom: 30px;
+}
+
+.services_tabs .MuiTabs-flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+}
+
+.services_tabs .MuiTabs-flexContainer button {
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: var(--fs-primary) !important;
+    line-height: 26px !important;
+    text-align: center !important;
+    text-transform: capitalize !important;
+    border-bottom: 2px solid !important;
+}
+
+.MuiTabs-indicator {
+    background-color: var(--bg-primary) !important;
+}
+
+.Mui-selected {
+    color: var(--text-primary) !important;
+}
+
+.services_tabs .MuiTabs-flexContainer button.Mui-selected {
+    color: var(--text-primary) !important;
+}
+
+
+/* -------------- service card ---------- */
+.serviceCard {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.serviceCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: brightness(0.7);
+}
+
+.serviceCard .details {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-white);
+    height: 100%;
+    padding: 20px;
+    transition: all 0.5s;
+}
+
+.serviceCard .details p {
+    text-align: center;
+    text-decoration-line: none;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.serviceCard .details a p {
+    background: var(--bg-white);
+    border-radius: 10px;
+    box-shadow: var(--shadow-light);
+    padding: 10px;
+    width: auto;
+    margin-bottom: 10px;
+    transition: all 0.5s linear;
+    margin-inline: 60px
+}
+
+.serviceCard .details a p :hover {
+    background-color: var(--bg-primary);
+    color: var(--text-white);
+}
+
+/* ---------- leran more btn ------------- */
+.learn-more {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    left: 50px;
+    cursor: pointer;
+    background: var(--bg-white);
+    border-radius: 100px;
+    box-shadow: var(--shadow-light);
+    padding: 10px 15px 10px 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 1;
+    text-transform: capitalize;
+    display: none;
+}
+
+.learn-more p {
+    color: var(--text-primary);
+}
+
+.learn-more .svgBg {
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.learn-more .svgBg svg {
+    width: 12px;
+    height: 12px;
+    color: var(--text-white);
+}
+
+/* --- card hover ------ */
+.serviceCard:hover {
+    box-shadow: var(--shadow-box);
+}
+
+.serviceCard:hover img {
+    filter: brightness(1);
+    animation: zoop 0.5s linear;
+}
+
+@keyframes zoop {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.serviceCard:hover::after {
+    top: 0;
+    bottom: 50%;
+}
+
+.serviceCard:hover .details {
+    top: 55%;
+}
+
+/* ------------------ responsive ------------------ */
+
+@media screen and (max-width:992px) {
+    .grid-container {
+        display: flex;
+        justify-content: center;
+        margin-inline: auto;
+        padding: 20px 10px 0px 10px !important;
+    }
+
+    .comprehensive_services {
+        padding: 30px 0 0 0;
+    }
+
+    .services_tabs .MuiTabs-flexContainer {
+        gap: 20px !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .comprehensive_services h2 {
+        margin-bottom: 30px;
+    }
+
+    .learn-more {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 6px 6px 15px;
+    }
+
+    .serviceCard .details {
+        display: none;
+    }
+
+    .serviceCard::after {
+        background-color: transparent;
+    }
+
+    .more-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .services_tabs .MuiTabs-flexContainer {
+        gap: 10px !important;
+    }
+}
+
+@media screen and (max-width:622px) {
+    .learn-more {
+        right: 30px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .gridd {
+        margin-inline: auto;
+        width: 100%;
+        margin-left: calc(-10px)!important;
+    }
+
+    .grid-container {
+        display: flex;
+        justify-content: center;
+        margin-inline: auto;
+        padding: 20px 10px 0px 10px !important;
+    }
+
+    .serviceCard {
+        max-width: 180px;
+        max-height: 200px;
+        border-radius: 10px;
+    }
+
+    .learn-more {
+        right: 15px;
+        left: 15px;
+    }
+
+    .learn-more .svgBg {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+    .learn-more .svgBg svg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .more-btn h6 {
+        display: none;
+    }
+
+    .viewAllServices span {
+        display: block !important;
+        font-size: 11px !important;
+    }
+
+    .viewAllServices {
+        cursor: pointer !important;
+        background: var(--bg-white) !important;
+        border-radius: 100px !important;
+        box-shadow: var(--shadow-light) !important;
+        padding: 10px 8px 10px 20px !important;
+        border: none !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        max-width: 190px !important;
+        height: 41px !important;
+        text-transform: none !important;
+    }
+
+    .viewAllServices .svgBg {
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 50% !important;
+    }
+
+    .viewAllServices .svgBg svg {
+        width: 9px !important;
+        height: 9px !important;
+    }
+
+    .services_tabs .MuiButtonBase-root {
+        width: auto !important;
+        min-width: auto !important;
+        letter-spacing: 0 !important;
+    }
+
+    .MuiTabs-flexContainer {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .MuiTabs-flexContainer::-webkit-scrollbar {
+        color: transparent;
+        background-color: transparent;
+    }
+
+    .MuiTabs-indicator {
+        display: none;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .services_tabs {
+        margin-bottom: 0;
+    }
+    .services_tabs .MuiTabs-flexContainer {
+        justify-content: flex-start !important;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .learn-more {
+        right: 5px;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width:374px) {
+    .grid-container {
+        padding: 20px 10px 0px 10px !important;
+    }
+
+    .services_tabs {
+        margin-bottom: 15px;
+    }
+
+    .serviceCard {
+        max-width: 150px;
+        max-height: 170px;
+    }
+
+    .MuiTabs-scroller {
+        overflow-x: clip !important;
+        width: auto !important;
+    }
+
+    .services_tabs .MuiTabs-flexContainer button {
+        font-size: 12px !important;
+        line-height: 16px !important;
+        padding: 0 5px !important;
+    }
+
+    .learn-more .svgBg {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+
+    .learn-more .svgBg svg {
+        width: 8px;
+        height: 8px;
+    }
+}
